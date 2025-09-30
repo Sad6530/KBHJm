@@ -1,0 +1,711 @@
+header {
+  background: rgba(255, 255, 255, 0.2); /* Transparent white */
+  backdrop-filter: blur(10px);          /* Glass blur effect */
+  -webkit-backdrop-filter: blur(10px);  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: black;
+  padding: 3px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  position: fixed; /* stays on top */
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1200px;
+  z-index: 10;
+}
+header .nam{
+  font-family: 'poppins', sans-serif;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.fa-bars {
+  font-size: 28px;
+  cursor: pointer;
+  padding: 10px;
+}
+header .nav {
+  position: absolute;
+  top: 56px;
+  left: 8px;
+  background: #eee;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 0;      /* hidden */
+  transition: max-height 0.5s ease; /* animation */
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  padding: 10px;
+  cursor: pointer;
+  color: #110f0e;
+}
+
+.nav li:hover {
+  background: #555;
+}
+
+/* Hover on icon: expand menu with animation */
+.fa-bars:hover + .nav {
+  max-height: 500px;  /* enough height to show menu */
+}
+
+
+
+header .donet{
+  color: #000;
+  background-color: none;
+}
+
+header .donet button{
+  border: 1px solid #956427;
+  padding: 8px;
+ 
+  border-radius: 20px;
+  background-color: transparent;
+  
+}
+
+
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #f9f9f9;
+    color: #333;
+  }
+
+  /* Hero Section */
+  .hero {
+    background: url('Pic/mj.jpg') no-repeat center/cover;
+    text-align: center;
+   /*  padding: 120px 20px; */
+    color: white;
+    position: relative;
+    padding: 120px 20px;
+  }
+
+  .hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    font-family: 'Great Vibes', cursive;
+    margin: 0 0 20px;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .hero  button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #ffcc00;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  /* Prayer Times */
+  .prayer-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    width: 130px;
+  }
+
+  .box h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #a77a0d;
+  }
+
+  .box p {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.a-b {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1 1 400px;
+}
+
+.about-text h1 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.a-img img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.a-vision-mission {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.b-2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.b-2 h1 {
+  font-size: 24px;
+  color: #a77a0d;
+  margin-bottom: 10px;
+  
+}
+
+
+
+
+.b-2 p {
+  font-size: 16px;
+  color: #555;
+  
+}
+
+
+
+
+.pillars {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+}
+
+.pillars h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.pillars p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.pillars-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pillar {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.pillar:hover {
+  transform: translateY(-5px);
+}
+
+.pillar .number {
+  display: inline-block;
+  background: #f4c542;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pillar h2 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.pillar .arabic {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d4a017;
+  display: block;
+  margin-top: 5px;
+  font-family: "Amiri", serif; /* আরবি ফন্ট */
+}
+
+.pillar p {
+  font-size: 13px;
+  color: #555;
+}
+
+.img-a img{
+  width: 100%;
+  border-radius: 20px;
+}
+
+
+
+.donet-for {
+  padding: 50px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.min-d h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.min-d p {
+  font-size: 14px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.fbg {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.boll {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#f4c542 0deg, #eee 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+  color: #333;
+}
+
+.boll span {
+  font-size: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.boll::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: white;
+  z-index: 1;
+}
+
+.boll h4 {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #444;
+}
+
+/* Animation Effect */
+@keyframes fill {
+  from {
+    background: conic-gradient(#f4c542 0deg, #eee 0deg);
+  }
+  to {
+    background: var(--gradient);
+  }
+}
+
+
+.btn-d{
+  padding: 25px;
+  font-size: 1.3em;
+  color: black;
+}
+
+.btn-d button{
+  font-size: 1.3em;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  background: #f4c542;
+}
+
+
+
+:root{
+  --max-width: 1100px;
+  --bg: #f7f8fb;
+  --card-bg: #ffffff;
+  --accent: #0f4c81;     /* মূল রং (চাইলে বদলে নেবে) */
+  --muted: #6b7280;
+  --radius: 14px;
+  --gap: 20px;
+  --pad: 24px;
+}
+
+/* সাধারণ কনটেইনার */
+.blog{
+  background: var(--bg);
+  padding: 48px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #111827;
+}
+
+.blog > h1{
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+  color: var(--accent);
+}
+
+.blog > p{
+  max-width: calc(var(--max-width) - 200px);
+  text-align: center;
+  color: var(--muted);
+  margin: 0;
+}
+
+/* গ্রিড: three-box */
+.three-box{
+  width: 100%;
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap);
+  margin-top: 18px;
+  box-sizing: border-box;
+  padding: 0 var(--pad);
+}
+
+/* কার্ড স্টাইল */
+.card{
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 16px;
+  box-shadow: 0 8px 20px rgba(12, 16, 22, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  overflow: hidden;
+}
+
+.card:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(12,16,22,0.11);
+}
+
+/* ভিডিও রেস্পনসিভ করার জন্য wrapper */
+.video-wrap{
+  width: 100%;
+  /* Modern way: aspect-ratio */
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* iframe fills the wrapper cleanly */
+.video-wrap iframe{
+  width: 100%;
+  height: 100%;
+  border: 0;
+  display: block;
+}
+
+/* টেক্সট স্টাইল */
+.card h2{
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.25;
+  color: #0b2542;
+  font-weight: 700;
+}
+
+.card p{
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* রেস্পনসিভ ব্রেকপয়েন্টস */
+@media (max-width: 960px){
+  .three-box{
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 18px;
+  }
+}
+
+@media (max-width: 620px){
+  .blog{ padding: 28px 14px; }
+  .three-box{
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .card{ padding: 14px; }
+  .blog > h1{ font-size: 1.5rem; }
+  .blog > p{ font-size: 0.95rem; }
+}
+
+/* ছোট ফাইন টুইক: লিংক/শেয়ার বোতন ইত্যাদি লাগালে ব্যবহার করতে পারবে */
+.actions{
+  display:flex;
+  gap:8px;
+  align-items:center;
+  margin-top:8px;
+}
+
+.btn{
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items:center;
+  gap:8px;
+}
+
+
+
+.complaint-section {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.complaint-section h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.complaint-section p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Input + Button together */
+.complaint-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.complaint-box input {
+  width: 100%;
+  padding: 12px 90px 12px 15px; /* ডান পাশে বাটনের জন্য ফাঁকা */
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.complaint-box button {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 8px 18px;
+  border: none;
+  background: #4CAF50;
+  color: white;
+  font-size: 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.complaint-box button:hover {
+  background: #45a049;
+}
+
+
+
+
+.footer {
+  background: #0a0a0a;
+  color: #ddd;
+  padding: 40px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-about,
+.footer-links,
+.footer-services,
+.footer-contact {
+  flex: 1 1 250px;
+  margin: 15px;
+}
+
+.footer h2, .footer h3 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.footer p, .footer a, .footer li {
+  font-size: 14px;
+  color: #bbb;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-links ul,
+.footer-services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li,
+.footer-services ul li {
+  margin-bottom: 8px;
+}
+
+.footer-contact .social-icons {
+  margin-top: 10px;
+}
+
+.footer-contact .social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 18px;
+  color: #bbb;
+  transition: 0.3s;
+}
+
+.footer-contact .social-icons a:hover {
+  color: #4CAF50;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #333;
+  font-size: 13px;
+  color: #888;
+}
+
+
+
+
+li a {
+  text-decoration: none;
+  color: black; /* চাইলে লিংকের রঙও সেট করতে পারো */
+}
